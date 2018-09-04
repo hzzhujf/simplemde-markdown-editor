@@ -93,4 +93,9 @@ gulp.task("styles", ["prettify-css"], function() {
 		.pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("default", ["scripts", "styles"]);
+gulp.task('watch', function() {
+  gulp.watch(['./src/*.js', './src/**/*.js'], ["scripts"]);
+  gulp.watch('./src/css/*.css', ["styles"]);
+})
+
+gulp.task("default", ["scripts", "styles", "watch"]);
