@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimpleMDE - Markdown Editor</title>
+  <link rel="stylesheet" href="./simplemde.css">
+</head>
+<body>
+  <textarea name="editor" id="" cols="30" rows="10"></textarea>
+  <script src="./simplemde.debug.js"></script>
+  <script>
+    var simplemde = new SimpleMDE({
+      imgUploadUrl: "http://localhost:8080/api/sku/uploadMutipleImg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOjEwNX0.8oR7g5Ws1bNN9OscqpQFSWtOk41SUozCTUFSRvGER4o"
+    });
+  </script>
+</body>
+</html>
